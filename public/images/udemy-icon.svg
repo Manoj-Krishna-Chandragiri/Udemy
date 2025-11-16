@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <circle cx="128" cy="128" r="128" fill="#A435F0"/>
+  
+  <!-- Cap symbol -->
+  <path d="M128 60L178 96H158L128 74L98 96H78L128 60Z" fill="white"/>
+  
+  <!-- U shape -->
+  <path d="M88 108V162C88 198 110 216 128 216C146 216 168 198 168 162V108H148V160C148 182 138 194 128 194C118 194 108 182 108 160V108H88Z" fill="white"/>
+</svg>

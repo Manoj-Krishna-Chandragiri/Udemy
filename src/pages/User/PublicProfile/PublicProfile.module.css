@@ -1,0 +1,157 @@
+
+/* Top area */
+.outerDiv {
+  width: 100%;
+  background: #f2e9ff;
+  padding: 40px 0;
+  
+}
+
+.topBar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 10%;
+  
+}
+
+.userBar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  justify-content: flex-start;
+  width: 100%;
+}
+.Learner {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+.user {
+  font-size: 34px;
+  font-weight: 500;
+  color: black;
+}
+
+/* Profile image bar */
+.menuTopBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.innerMenuTopBar {
+  display: flex;
+  justify-content: center;
+}
+
+.profileBar {
+  background: white;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.profilePic {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.bdy {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;        /* <<< allows multiple rows */
+  gap: 20px;              /* spacing between cards */
+  margin-top: 40px;
+  padding-bottom: 60px;   /* <<< space after cards */
+}
+
+
+/* Course card */
+.courseCard {
+  width: 280px;
+  padding: 18px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+  
+  transition: 0.2s ease-in-out;
+}
+
+.courseCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.courseImg {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.courseTitle {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 630;
+  color: #222;
+}
+
+.courseMetaDiv {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;     /* allows items to move to next line */
+  gap: 6px;            /* spacing instead of margin */
+  row-gap: 8px;        /* vertical spacing */
+}
+
+.course, .rate, .ratings, .level,.hours, .lectures {
+  font-size: 12px;
+  font-weight: 300;
+  color: #222;
+  border: #888 1px solid;
+  border-radius: 4px;
+  padding: 1px 4px;
+  white-space: nowrap;
+}
+
+.instructor {
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 350;
+  color: #444;
+}
+.courseDesc {
+  margin-top: 6px;
+  font-size: 20px;
+  font-weight: 300;
+  color: #444;
+}
+.coursePrice {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family:'Cormorant Garamond', serif;
+  color: #000;
+}
+.dummyPrice {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: line-through;
+  font-family:'Cormorant Garamond', serif;
+  color: #333;
+}
+.prices {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

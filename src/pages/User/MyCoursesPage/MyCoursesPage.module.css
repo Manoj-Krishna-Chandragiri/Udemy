@@ -1,0 +1,251 @@
+/* ---------------- EXISTING CSS (Optimized) ---------------- */
+
+.outerDiv {
+  width: 100%;
+  min-height: 100%;
+  gap: 4rem;
+}
+
+.topBar {
+  width: 100%;
+  height: 8rem;
+  color: var(--white);
+  background-color: var(--gray);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topBarTtl {
+  width: 85%;
+  font-size: 2.8rem;   /* slightly reduced */
+  
+  font-weight: 680;
+}
+
+.menuBar {
+  margin-bottom: 1.5rem; /* reduced */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--gray);
+}
+
+.links {
+  width: 85%;
+  display: flex;
+  justify-content: left;
+  gap: 1.5rem; /* Slightly reduced spacing */
+  overflow: scroll;
+}
+
+.links::-webkit-scrollbar {
+  display: none;
+}
+
+.link {
+  padding: 0.4rem;
+  font-weight: 600;
+  color: var(--gray86);
+  text-decoration: none;
+  white-space: nowrap;
+  font-size: 0.95rem; /* reduced */
+}
+
+.linkActive {
+  color: var(--white);
+  border-bottom: 4px solid var(--white);
+}
+
+.outletBdy {
+  width: 85%;
+  min-height: 40vh;
+  margin: 1rem auto 2rem auto;
+}
+
+/* ---------------- NEW COMPONENT CSS (Polished to Udemy Scale) ---------------- */
+
+.streakContainer {
+  width: 85%;
+  margin: 1rem auto 2rem auto; /* reduced spacing */
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+/* ------------- CARD 1: Start a new streak ------------- */
+
+.streakCard {
+  width: 100%;
+  padding: 1.8rem 2rem;  /* tighter like Udemy */
+  
+  border: 1px solid #e6e6e6;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+.streakLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.streakTitle {
+  font-size: 1.6rem;  /* slightly smaller */
+  font-weight: 600;
+}
+
+.streakSubtitle {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.streakRight {
+  display: flex;
+  
+  align-items: center;
+  gap: 15rem;
+}
+
+.streakItem {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.streakFlame {
+    /* smaller */
+  width: 35px; 
+  row-gap: 20px;
+  opacity: 0.8;
+}
+
+.streakNum {
+  font-size: 1rem; /* smaller */
+  font-weight: 600;
+}
+
+.streakLabel {
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.circle {
+   width: 100px;
+   height: 85px; 
+   size: 100px;
+  row-gap: 100px;
+  opacity: 3;
+}
+
+.progressText {
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.2rem;
+}
+
+.orangeDot, .greenDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.orangeDot { background: orange; }
+.greenDot  { background: green; }
+
+/* ------------- CARD 2: Schedule learning time ------------- */
+
+.scheduleCard {
+  width: 100%;
+  padding: 1.6rem 1.8rem;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  display: flex;
+  gap: 1.5rem;
+  background: white;
+}
+
+.scheduleIconBox {
+  display: flex;
+  align-items: start;
+}
+
+.scheduleIcon {
+  width: 26px; /* smaller */
+
+  opacity: 3;
+}
+
+.scheduleContent {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.scheduleTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.scheduleText {
+  font-size: 0.92rem;
+  color: #555;
+  margin-top: 0.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.scheduleButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btnPrimary {
+  background:white;
+  color: #6a0dad;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid #6a0dad;
+  border-radius: 4px;
+  font-weight: 650;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.btnText {
+  background: none;
+  border: none;
+  color: #6a0dad;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* ---------------- MOBILE FIXES ---------------- */
+
+@media screen and (max-width: 768px) {
+  .streakCard {
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .streakRight {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .scheduleCard {
+    flex-direction: column;
+  }
+}
