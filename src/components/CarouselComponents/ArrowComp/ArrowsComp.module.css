@@ -1,0 +1,40 @@
+.carosuel {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.carosuel:hover {
+  filter: brightness(0) saturate(100%) invert(14%) sepia(85%) saturate(4507%)
+    hue-rotate(274deg) brightness(95%) contrast(109%);
+}
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES FOR CAROUSEL ARROWS
+   ============================================ */
+
+/* Extra Small Screens (320px - 426px) */
+@media screen and (max-width: 426px) {
+  .carosuel {
+    width: 20px;
+    height: 20px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Small Screens (427px - 768px) */
+@media screen and (max-width: 768px) {
+  .carosuel {
+    width: 22px;
+    height: 22px;
+    min-width: 44px;
+    min-height: 44px;
+    padding: 8px;
+  }
+}

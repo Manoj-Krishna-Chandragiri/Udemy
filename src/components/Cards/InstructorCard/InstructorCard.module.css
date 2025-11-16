@@ -69,3 +69,114 @@
   margin: 0 0.3rem;
   font-weight: 400;
 }
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES FOR INSTRUCTORCARD
+   ============================================ */
+
+/* Extra Small Screens (320px - 426px) */
+@media screen and (max-width: 426px) {
+  .outerDiv {
+    width: 100%;
+    height: auto;
+    min-height: 140px;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+  }
+
+  .innerDiv {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  .imgBox {
+    width: 25%;
+  }
+
+  .img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .det {
+    width: 75%;
+    justify-content: center;
+  }
+
+  .name {
+    font-size: 0.9rem;
+  }
+
+  .langs {
+    font-size: 0.8rem;
+  }
+
+  .rats {
+    font-size: 0.8rem;
+  }
+
+  .rats > span {
+    font-size: 0.75rem;
+  }
+
+  .txt {
+    font-size: 0.75rem;
+  }
+
+  .txt > span {
+    margin: 0 0.2rem;
+  }
+}
+
+/* Small Screens (427px - 768px) */
+@media screen and (max-width: 768px) {
+  .outerDiv {
+    width: 100%;
+    height: auto;
+    min-height: 150px;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid var(--gray86);
+  }
+
+  .imgBox {
+    width: 25%;
+  }
+
+  .det {
+    width: 75%;
+  }
+
+  .name {
+    font-size: 0.95rem;
+  }
+
+  .langs {
+    font-size: 0.85rem;
+  }
+
+  .rats {
+    font-size: 0.85rem;
+  }
+
+  .txt {
+    font-size: 0.8rem;
+  }
+}
+
+/* Medium Screens (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .outerDiv {
+    width: 260px;
+    height: 150px;
+    margin: 0.75rem;
+  }
+
+  .name {
+    font-size: 0.95rem;
+  }
+
+  .langs {
+    font-size: 0.85rem;
+  }
+}

@@ -1,17 +1,53 @@
 .outerDiv {
   display: block;
-  width: 110%;
-  height: 450px;        /* You can adjust: 180, 220, 260, 300 */
-  
-  border-radius: 10px;  /* Optional - looks better */
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 .img {
   width: 100%;
-  height: 110%;
-  
-  object-position: left; /* Move image to left side */
-  
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES FOR BANNER
+   ============================================ */
+
+/* Extra Small Screens (320px - 426px) */
+@media screen and (max-width: 426px) {
+  .outerDiv {
+    width: 100%;
+    height: 200px;
+    border-radius: 6px;
+  }
+
+  .img {
+    height: 100%;
+  }
+}
+
+/* Small Screens (427px - 768px) */
+@media screen and (max-width: 768px) {
+  .outerDiv {
+    width: 100%;
+    height: 280px;
+    border-radius: 8px;
+  }
+
+  .img {
+    height: 100%;
+  }
+}
+
+/* Medium Screens (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .outerDiv {
+    width: 100%;
+    height: 350px;
+  }
 }
 

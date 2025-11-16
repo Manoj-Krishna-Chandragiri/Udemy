@@ -123,11 +123,25 @@ l11.547-1.2L16.026,0.6L20.388,10.918z"
             <span className={css.txt}>{courseCoveredPercent}% complete</span>
             <span className={css.starsRatings}>
               <span>
-              <img src="/images/star.png" className={css.starIcon} />
-              <img src="/images/star.png" className={css.starIcon} />
-              <img src="/images/star.png" className={css.starIcon} />
-              <img src="/images/star.png" className={css.starIcon} />
-              <img src="/images/star.png" className={css.starIcon} /></span>
+              {Array.from(new Array(Math.floor(ratings)), (_, i) => (
+                <img src="/images/star.png" key={`full-star-${id}-${i}`} className={css.starIcon} />
+              ))}
+              {Math.floor(ratings) < 5 && ratings % 1 !== 0 && (
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" className={css.starIcon} key={`partial-star-${id}`}>
+                  <defs>
+                    <linearGradient id={`partial-${id}`}>
+                      <stop offset={`${(ratings % 1) * 100}%`} stopColor="#f2b01e" />
+                      <stop offset={`${(ratings % 1) * 100}%`} stopColor="#d3d3d3" />
+                    </linearGradient>
+                  </defs>
+                  <path fill={`url(#partial-${id})`} d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              )}
+              {Array.from(new Array(5 - Math.ceil(ratings)), (_, i) => (
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" className={css.starIcon} key={`empty-star-${id}-${i}`}>
+                  <path fill="#d3d3d3" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              ))}</span>
               <span onClick={modalHandler} className={css.rateText}>Leave a rating</span>
             </span>
 

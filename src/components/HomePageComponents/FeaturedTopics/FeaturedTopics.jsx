@@ -33,7 +33,7 @@ const FeaturedTopics = () => {
     },
     {
       id: "2",
-      category: "Bussiness",
+      category: "Business",
       topics: [
         {
           id: "t21",

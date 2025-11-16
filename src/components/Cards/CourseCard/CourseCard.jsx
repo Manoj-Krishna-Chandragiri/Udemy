@@ -31,11 +31,7 @@ const CourseCard = (props) => {
 
   let totalRating = (
     (1 * stars?.a + 2 * stars?.b + 3 * stars?.c + 4 * stars?.d + 5 * stars?.e) /
-      stars?.a +
-    stars?.b +
-    stars?.c +
-    stars?.d +
-    stars?.e
+      (stars?.a + stars?.b + stars?.c + stars?.d + stars?.e)
   ).toFixed(2);
 
   let duration = new Date(courseDuration * 1000);

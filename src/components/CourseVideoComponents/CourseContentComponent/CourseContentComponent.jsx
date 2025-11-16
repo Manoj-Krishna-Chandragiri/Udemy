@@ -13,7 +13,19 @@ import css from "./CourseContentComponent.module.css";
 const CourseContentComponent = (props) => {
   const { title = "", data = [], playerWidthSetter = () => {} } = props;
   const [toggleBox, setToggleBox] = useState({});
-  const [toggleDrpDwn, setToggleDrpDwn] = useState({});
+  
+  // Initialize all checkboxes as checked (ticked)
+  const initializeCheckedState = () => {
+    const checkedState = {};
+    data?.forEach((section) => {
+      section.list?.forEach((item) => {
+        checkedState[item.id] = true; // All items checked by default
+      });
+    });
+    return checkedState;
+  };
+  
+  const [toggleDrpDwn, setToggleDrpDwn] = useState(initializeCheckedState());
 
   return (
     <div className={css.outterDiv}>

@@ -189,3 +189,162 @@
     width: 100%;
   }
 }
+
+/* ============================================
+   MOBILE RESPONSIVE ENHANCEMENTS FOR CHECKOUT
+   ============================================ */
+
+/* Extra Small Screens (320px - 426px) */
+@media screen and (max-width: 426px) {
+  .outerDiv {
+    align-items: flex-start;
+  }
+
+  .bdy {
+    min-height: calc(100vh - 60px);
+    flex-direction: column;
+  }
+
+  .leftDiv {
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+    min-height: auto;
+  }
+
+  .ttl {
+    width: 100%;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+  }
+
+  .cbdy {
+    width: 100%;
+    margin: 0.75rem 0;
+  }
+
+  .cbdyTtl {
+    font-size: 1.1rem;
+    margin: 0.75rem 0;
+  }
+
+  .cbdyTtl span:last-child {
+    font-size: 0.75rem;
+  }
+
+  .cres {
+    margin: 0.75rem 0;
+  }
+
+  .crsTtl {
+    font-size: 0.85rem;
+    margin: 0 0.5rem;
+  }
+
+  .img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .formBox {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .rightDiv {
+    width: 100%;
+    padding: 1.5rem;
+    min-height: auto;
+  }
+
+  .innerRightDiv {
+    width: 100%;
+  }
+
+  .p1,
+  .p2 {
+    font-size: 0.95rem;
+  }
+
+  .p1 span:first-child {
+    font-size: 0.85rem;
+  }
+
+  .note {
+    font-size: 0.75rem;
+    margin: 0.75rem 0;
+  }
+
+  .icon {
+    width: 13px;
+    height: 13px;
+    margin: 0 0.3rem;
+  }
+}
+
+/* Small Screens (427px - 768px) */
+@media screen and (max-width: 768px) {
+  .bdy {
+    min-height: calc(100vh - 70px);
+    flex-direction: column;
+  }
+
+  .leftDiv {
+    width: 100%;
+    padding: 1.5rem;
+    justify-content: center;
+  }
+
+  .rightDiv {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .ttl {
+    width: 100%;
+    font-size: 1.6rem;
+    margin: 0.75rem 0;
+  }
+
+  .cbdy {
+    width: 100%;
+  }
+
+  .cbdyTtl {
+    font-size: 1.2rem;
+    margin: 0.75rem 0;
+  }
+
+  .formBox {
+    flex-direction: column;
+  }
+
+  .innerRightDiv {
+    width: 100%;
+  }
+
+  .p1,
+  .p2 {
+    font-size: 1rem;
+  }
+}
+
+/* Medium Screens (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .cbdy,
+  .ttl {
+    width: 85%;
+  }
+
+  .innerRightDiv {
+    width: 85%;
+  }
+
+  .leftDiv {
+    padding: 1.5rem;
+  }
+
+  .rightDiv {
+    padding: 5rem 2rem;
+  }
+}

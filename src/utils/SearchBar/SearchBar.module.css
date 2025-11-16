@@ -68,3 +68,85 @@
 .resValTxt {
   margin: 0 1rem;
 }
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES FOR SEARCHBAR
+   ============================================ */
+
+/* Extra Small Screens (320px - 426px) */
+@media screen and (max-width: 426px) {
+  .searchBar {
+    min-height: 36px;
+  }
+
+  .iconBox {
+    width: 36px;
+  }
+
+  .searchIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .searchInpt {
+    width: calc(100% - 36px);
+    font-size: 0.85rem;
+    padding: 8px;
+  }
+
+  .resultBox {
+    max-height: 250px;
+    padding: 0.1rem 0.4rem;
+    font-size: 0.9rem;
+  }
+
+  .resVal {
+    min-height: 28px;
+    margin: 0.3rem;
+  }
+
+  .resValTxt {
+    margin: 0 0.75rem;
+  }
+
+  .searchIconBox {
+    width: 12px;
+    height: 12px;
+  }
+
+  .srchIconBox {
+    width: 9px;
+    height: 9px;
+  }
+}
+
+/* Small Screens (427px - 768px) */
+@media screen and (max-width: 768px) {
+  .searchBar {
+    min-height: 38px;
+  }
+
+  .iconBox {
+    width: 38px;
+  }
+
+  .searchIcon {
+    width: 17px;
+    height: 17px;
+  }
+
+  .searchInpt {
+    width: calc(100% - 38px);
+    font-size: 0.9rem;
+    padding: 9px;
+  }
+
+  .resultBox {
+    max-height: 280px;
+    font-size: 0.95rem;
+  }
+
+  .resVal {
+    min-height: 30px;
+  }
+}

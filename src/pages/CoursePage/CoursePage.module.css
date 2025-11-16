@@ -86,3 +86,267 @@ a{ color:inherit }
 
 /* Responsive tweaks */
 @media (max-width: 1000px){ .heroRow, .mainRow { flex-direction: column; } .heroRight, .rightColumn { width:100%; } }
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES FOR COURSE PAGE
+   ============================================ */
+
+/* Extra Small Screens (320px - 426px) */
+@media screen and (max-width: 426px) {
+  .coursePageOuter {
+    font-size: 13px;
+  }
+
+  .heroRow {
+    padding: 12px 1rem;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .heroLeft {
+    max-width: 100%;
+  }
+
+  .breadcrumbs {
+    font-size: 11px;
+    margin-bottom: 8px;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 4px 0 12px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+    max-width: 100%;
+  }
+
+  .metaRow {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+
+  .ratingStrip {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .promoBox {
+    width: 100%;
+    min-width: unset;
+    gap: 8px;
+    padding: 8px 10px;
+  }
+
+  .promoText {
+    font-size: 12px;
+  }
+
+  .ratingBox {
+    width: 100%;
+  }
+
+  .ratingValue {
+    font-size: 16px;
+  }
+
+  .learnersBox {
+    width: 100%;
+  }
+
+  .heroRight {
+    width: 100%;
+  }
+
+  .previewCard {
+    border-radius: 4px;
+  }
+
+  .previewMedia {
+    height: 150px;
+  }
+
+  .purchaseInfo {
+    padding: 12px;
+  }
+
+  .goCourseBtn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .moneyBack {
+    font-size: 11px;
+    margin-left: 0;
+  }
+
+  .includesTtl {
+    font-size: 14px;
+    margin-left: 0;
+  }
+
+  .includesList {
+    margin-left: 0;
+    font-size: 13px;
+  }
+
+  .mainRow {
+    padding: 12px 1rem;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  .leftColumn {
+    max-width: 100%;
+  }
+
+  .rightColumn {
+    width: 100%;
+  }
+
+  .boxSection {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .secTtl {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .twoColList {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .curriculumItem {
+    padding: 6px 0;
+  }
+
+  .purchaseBox {
+    padding: 12px;
+  }
+
+  .priceNew {
+    font-size: 22px;
+  }
+
+  .buyBtn,
+  .wishlistBtn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .guarantee {
+    font-size: 11px;
+  }
+
+  .purchasedate {
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .instructorCard img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* Small Screens (427px - 768px) */
+@media screen and (max-width: 768px) {
+  .coursePageOuter {
+    font-size: 14px;
+  }
+
+  .heroRow {
+    padding: 16px 1.5rem;
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 28px;
+    margin: 6px 0 12px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .ratingStrip {
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .promoBox {
+    min-width: 150px;
+    padding: 10px 12px;
+  }
+
+  .promoText {
+    font-size: 12px;
+  }
+
+  .ratingValue {
+    font-size: 18px;
+  }
+
+  .heroRight {
+    width: 100%;
+  }
+
+  .previewMedia {
+    height: 180px;
+  }
+
+  .mainRow {
+    padding: 20px 1.5rem;
+    gap: 16px;
+  }
+
+  .twoColList {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .priceNew {
+    font-size: 24px;
+  }
+
+  .moneyBack {
+    margin-left: 0;
+  }
+
+  .includesTtl,
+  .purchasedate {
+    margin-left: 0;
+  }
+
+  .includesList {
+    margin-left: 0;
+  }
+}
+
+/* Medium Screens (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .heroRow,
+  .mainRow {
+    padding: 24px 2rem;
+  }
+
+  .heroRight,
+  .rightColumn {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .priceNew {
+    font-size: 26px;
+  }
+}

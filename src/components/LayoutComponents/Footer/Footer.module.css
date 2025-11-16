@@ -81,3 +81,116 @@
     align-items: center;
   }
 }
+
+/* ============================================
+   MOBILE RESPONSIVE ENHANCEMENTS FOR FOOTER
+   ============================================ */
+
+/* Extra Small Screens (320px - 426px) */
+@media screen and (max-width: 426px) {
+  .outerDiv {
+    padding: 1rem 0;
+  }
+
+  .innerDiv {
+    width: 95%;
+  }
+
+  .clmns {
+    margin: 1rem 0;
+  }
+
+  .clmn {
+    max-width: 100%;
+    margin: 0.75rem 0;
+  }
+
+  .lastChild {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+  .cli {
+    font-size: 0.8rem;
+    margin: 0.3rem 0;
+  }
+
+  .creds {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .cred1 {
+    width: 80px;
+    height: 40px;
+  }
+
+  .cred2 {
+    text-align: center;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
+
+/* Small Screens (427px - 768px) */
+@media screen and (max-width: 768px) {
+  .innerDiv {
+    width: 95%;
+  }
+
+  .clmns {
+    margin: 2rem 0;
+    flex-wrap: wrap;
+  }
+
+  .clmn {
+    flex: 1;
+    margin: 0.75rem 0;
+    min-width: 150px;
+  }
+
+  .lastChild {
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+
+  .cli {
+    font-size: 0.85rem;
+    margin: 0.4rem 0;
+  }
+
+  .creds {
+    flex-direction: row;
+    margin: 1rem 0;
+  }
+
+  .cred1 {
+    width: 90px;
+    height: 45px;
+  }
+
+  .cred2 {
+    font-size: 0.85rem;
+  }
+}
+
+/* Medium Screens (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .innerDiv {
+    width: 90%;
+  }
+
+  .clmns {
+    margin: 2.5rem 0;
+  }
+
+  .clmn {
+    max-width: 280px;
+  }
+
+  .cli {
+    font-size: 0.85rem;
+  }
+}

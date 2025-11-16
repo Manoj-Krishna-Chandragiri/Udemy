@@ -26,3 +26,69 @@
   font-weight: 700;
   margin: 1rem 0;
 }
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES FOR CATEGORY PAGE
+   ============================================ */
+
+/* Extra Small Screens (320px - 426px) */
+@media screen and (max-width: 426px) {
+  .outerDiv {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .bdy {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0.75rem;
+  }
+
+  .pageTtl {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    font-weight: 600;
+  }
+
+  .box {
+    margin: 1.5rem 0;
+  }
+
+  .ttl {
+    font-size: 1.1rem;
+    margin: 0.75rem 0;
+  }
+}
+
+/* Small Screens (427px - 768px) */
+@media screen and (max-width: 768px) {
+  .bdy {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .pageTtl {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+
+  .box {
+    margin: 2rem 0;
+  }
+
+  .ttl {
+    font-size: 1.2rem;
+    margin: 0.75rem 0;
+  }
+}
+
+/* Medium Screens (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .bdy {
+    width: 90%;
+  }
+
+  .pageTtl {
+    font-size: 1.8rem;
+  }
+}

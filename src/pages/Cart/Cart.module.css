@@ -154,3 +154,153 @@
     padding: 1rem;
   }
 }
+
+/* ============================================
+   MOBILE RESPONSIVE ENHANCEMENTS FOR CART
+   ============================================ */
+
+/* Extra Small Screens (320px - 426px) */
+@media screen and (max-width: 426px) {
+  .outerDiv {
+    padding: 0.75rem;
+    min-height: calc(100vh - 60px);
+  }
+
+  .innerDiv {
+    width: 100%;
+  }
+
+  .ttl {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+
+  .boxs {
+    margin: 1rem 0;
+  }
+
+  .box1,
+  .box2 {
+    width: 100%;
+  }
+
+  .cnt,
+  .totalTxt {
+    font-size: 0.95rem;
+  }
+
+  .currrency {
+    font-size: 1.5rem;
+  }
+
+  .totalDiscount,
+  .ttlDisPer {
+    font-size: 0.9rem;
+  }
+
+  .ctxt {
+    font-size: 0.95rem;
+  }
+
+  .cpnBox {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0.75rem 0;
+    gap: 0.5rem;
+  }
+
+  .icon {
+    margin: 0.5rem 0;
+  }
+
+  .cartBox {
+    padding: 0.75rem;
+    min-height: 250px;
+    gap: 0.75rem;
+  }
+
+  .emptyCartImg {
+    width: 150px;
+    height: 150px;
+  }
+
+  .cartItemsLen {
+    gap: 0.3rem;
+    font-size: 0.95rem;
+  }
+
+  .whTtl {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Screens (427px - 768px) */
+@media screen and (max-width: 768px) {
+  .outerDiv {
+    padding: 1.5rem;
+  }
+
+  .innerDiv {
+    width: 100%;
+  }
+
+  .ttl {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  .boxs {
+    flex-direction: column-reverse;
+    margin: 1.5rem 0;
+  }
+
+  .box1 {
+    width: 100%;
+    margin: 0.75rem 0;
+  }
+
+  .box2 {
+    width: 100%;
+  }
+
+  .cnt,
+  .totalTxt {
+    font-size: 1rem;
+  }
+
+  .currrency {
+    font-size: 1.8rem;
+  }
+
+  .cpnBox {
+    flex-direction: row;
+  }
+
+  .cartBox {
+    min-height: 280px;
+  }
+
+  .emptyCartImg {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* Medium Screens (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .innerDiv {
+    width: 90%;
+  }
+
+  .ttl {
+    font-size: 2.2rem;
+  }
+
+  .box1 {
+    width: 70%;
+  }
+
+  .box2 {
+    width: 28%;
+  }
+}

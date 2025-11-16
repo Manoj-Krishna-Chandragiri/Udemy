@@ -18,7 +18,7 @@ const PublicProfile = () => {
         <div className={css.topBar}>
           <div className={css.userBar}>
             <span className={css.Learner}> LEARNER</span>
-            <div className={css.user}>Achi Venkata Eswar</div>
+            <div className={css.user}>Chandragiri Manoj Krishna</div>
           </div>
         </div>
       </div>

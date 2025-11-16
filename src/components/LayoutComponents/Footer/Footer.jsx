@@ -20,7 +20,7 @@ const Footer = () => {
           <div className={css.clmn}>
             <ul className={css.cul}>
               <li className={css.cli}>
-                <Link to="/">Udemy Bussiness</Link>
+                <Link to="/">Udemy Business</Link>
               </li>
               <li className={css.cli}>
                 <Link to="/">Teach on Udemy</Link>

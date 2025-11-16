@@ -35,8 +35,8 @@ const InstructorNavbar = () => {
                     />
                   </div>
                   <div className={css.rightUserDiv}>
-                    <div className={css.uname}>Hemanth Kumar Addagada</div>
-                    <div className={css.email}>addagadahemanth@gmail.com</div>
+                    <div className={css.uname}>Chandragiri Manoj Krishna</div>
+                    <div className={css.email}>manojkrishnachandragiri@gmail.com</div>
                   </div>
                 </Link>
               </div>
@@ -117,7 +117,7 @@ const InstructorNavbar = () => {
               <div className={css.prflDiv}>
                 <div className={css.menuItem2}>
                   <span>
-                    <div className={css.menuItemTxt1}>Udemy Bussiness</div>
+                    <div className={css.menuItemTxt1}>Udemy Business</div>
                     <div className={css.menuItemTxt2}>
                       Bring learning to your company
                     </div>

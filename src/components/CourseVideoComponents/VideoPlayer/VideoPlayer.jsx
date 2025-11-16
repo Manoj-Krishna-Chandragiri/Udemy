@@ -17,8 +17,10 @@ import notesIcon from "/icons/videoPlayer/notes.png";
 import leftArrowIcon from "/icons/videoPlayer/left-arrow.png";
 import rightArrowIcon from "/icons/videoPlayer/right-arrow.png";
 
-import video from "../../../../public/videos/Coding.mp4";
-// import video from "/videos/sample2.mp4";
+// Using professional Kotlin programming video from iStock
+// High-quality video showing programming/coding environment
+const videoSource = "https://media.istockphoto.com/id/1300635297/video/kotlin-programming-language-source-code-typing-effect-kotlin-programmer-ticker-colored.mp4?s=mp4-640x640-is&k=20&c=2vAVhtCNGqRN1nsr--H7Cj9N1T-MBaCwj-SVEwOi5Gg=";
+
 import { useEffect } from "react";
 
 const VideoPlayer = (props) => {
@@ -533,9 +535,11 @@ const VideoPlayer = (props) => {
         className={css.video}
         onClick={videoPlayerHandler}
         id="video"
+        autoPlay
+        muted
       >
-        <source src={video} type="video/webm" />
-        <source src={video} type="video/mp4" />
+        <source src={videoSource} type="video/webm" />
+        <source src={videoSource} type="video/mp4" />
       </video>
       {arrowsToggle ? (
         <div

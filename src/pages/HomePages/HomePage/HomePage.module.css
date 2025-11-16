@@ -20,3 +20,57 @@
     display: none;
   }
 }
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES FOR HOME PAGE
+   ============================================ */
+
+/* Extra Small Screens (320px - 426px) */
+@media screen and (max-width: 426px) {
+  .ma {
+    width: 100%;
+    margin: 0;
+    gap: 20px;
+    padding: 0 1rem;
+  }
+
+  .m1 {
+    gap: 8px;
+    margin: 1.5rem 0;
+  }
+
+  .banner {
+    display: none;
+  }
+}
+
+/* Small Screens (427px - 768px) */
+@media screen and (max-width: 768px) {
+  .ma {
+    width: 95%;
+    gap: 60px;
+    padding: 0 0.5rem;
+  }
+
+  .m1 {
+    gap: 12px;
+    margin: 2rem 0;
+  }
+
+  .banner {
+    gap: 15px;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Medium Screens (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .ma {
+    width: 85%;
+    gap: 80px;
+  }
+
+  .m1 {
+    gap: 10px;
+  }
+}

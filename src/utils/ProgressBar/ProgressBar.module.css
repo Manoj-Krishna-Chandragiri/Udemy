@@ -12,3 +12,21 @@
   background-color: var(--light-gray);
 }
 
+/* ============================================
+   MOBILE RESPONSIVE STYLES FOR PROGRESSBAR
+   ============================================ */
+
+@media screen and (max-width: 426px) {
+  .outerPBar {
+    height: 8px;
+    margin: 0.3rem 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .outerPBar {
+    height: 9px;
+    margin: 0.4rem 0;
+  }
+}
+

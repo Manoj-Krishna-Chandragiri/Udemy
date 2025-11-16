@@ -195,3 +195,120 @@
   margin: 1rem 0;
   display: flex;
 }
+
+/* ============================================
+   MOBILE RESPONSIVE STYLES FOR COURSECARD
+   ============================================ */
+
+/* Extra Small Screens (320px - 426px) */
+@media screen and (max-width: 426px) {
+  .outerDiv {
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+  }
+
+  .imgBox {
+    height: 180px;
+  }
+
+  .cardBdy {
+    padding: 0.75rem;
+  }
+
+  .ttl {
+    font-size: 0.9rem;
+    line-height: 1.3em;
+    height: 2.6em;
+  }
+
+  .authDet,
+  .noOfRats {
+    font-size: 0.75rem;
+  }
+
+  .newPrc,
+  .oldPrc {
+    font-size: 0.9rem;
+  }
+
+  .stats {
+    margin: 0.5rem 0;
+    font-size: 0.75rem;
+  }
+
+  .rat2 {
+    margin: 0 0.25rem;
+  }
+}
+
+/* Small Screens (427px - 768px) */
+@media screen and (max-width: 768px) {
+  .outerDiv {
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+
+  .imgBox {
+    height: 200px;
+  }
+
+  .cardBdy {
+    padding: 0.75rem;
+  }
+
+  .ttl {
+    font-size: 0.95rem;
+    line-height: 1.4em;
+    height: 2.8em;
+  }
+
+  .authDet,
+  .noOfRats {
+    font-size: 0.8rem;
+  }
+
+  .newPrc,
+  .oldPrc {
+    font-size: 0.95rem;
+  }
+
+  .stats {
+    margin: 0.5rem 0;
+    font-size: 0.8rem;
+  }
+
+  /* Disable hover card on tablet and below */
+  .outerDiv:hover .hovCard {
+    display: none;
+  }
+}
+
+/* Medium Screens (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .outerDiv {
+    width: 220px;
+    height: 300px;
+  }
+
+  .ttl {
+    font-size: 0.9rem;
+  }
+
+  .authDet,
+  .noOfRats {
+    font-size: 0.75rem;
+  }
+
+  .outerDiv:hover .hovCard {
+    width: 320px;
+    right: -110%;
+    top: -5%;
+  }
+
+  .innerBox {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}

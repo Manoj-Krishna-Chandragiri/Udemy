@@ -168,3 +168,115 @@
   justify-content: center;
   align-items: center;
 }
+
+/* ============================================
+   MOBILE RESPONSIVE ENHANCEMENTS FOR NAVBAR
+   ============================================ */
+
+/* Extra Small Screens (320px - 426px) */
+@media screen and (max-width: 426px) {
+  .navbar {
+    height: 3.2rem;
+    font-size: 0.75rem;
+  }
+
+  .left {
+    width: 60px;
+  }
+
+  .logoBox {
+    width: 70px;
+    height: 50px;
+  }
+
+  .right {
+    width: calc(100% - 60px);
+  }
+
+  .searchBox {
+    margin: 0 0.5rem;
+  }
+
+  .hovBox {
+    margin: 0 0.25rem;
+    font-size: 0.75rem;
+  }
+
+  .cartBox {
+    margin: 0 0.25rem;
+  }
+
+  .btns {
+    width: 30%;
+    gap: 0.25rem;
+  }
+
+  .sidebarMenu {
+    width: 90%;
+    height: calc(100vh - 3.2rem);
+  }
+
+  .catDropdownM {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+  }
+
+  .searchBoxM {
+    margin: 0.75rem 0;
+  }
+
+  .hovBoxM {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+  }
+
+  .btnsM {
+    margin: 0.75rem 0;
+    gap: 0.5rem;
+  }
+}
+
+/* Small Screens (427px - 768px) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 3.5rem;
+    font-size: 0.85rem;
+  }
+
+  .menuBox {
+    margin: 0 0.75rem;
+  }
+
+  .menuIcon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .sidebarMenu {
+    width: 60%;
+    height: calc(100vh - 3.5rem);
+  }
+
+  .logoBox {
+    width: 75px;
+    height: 60px;
+  }
+
+  .catDropdownM {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+  }
+
+  .searchBoxM {
+    margin: 1rem 0;
+  }
+
+  .hovBoxM {
+    margin: 0.4rem 0;
+    font-size: 0.95rem;
+  }
+
+  .btnsM {
+    margin: 1rem 0;
+  }
+}
