@@ -290,7 +290,7 @@ const VideoPlayer = (props) => {
       className={[css.videoContainer].join(" ")}
       id="videoContainer"
       style={{
-        maxWidth: playerWidthState ? "100%" : "1200px",
+        maxWidth: "100%",
         maxHeight: playerWidthState ? "100%" : "700px",
       }}
     >

@@ -300,3 +300,81 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 /* autoplay checkbox css END */
+
+/* ============================================
+   MOBILE RESPONSIVE - VIDEO PLAYER FIXES
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+  .videoContainer {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    aspect-ratio: 16 / 9;
+    min-height: auto;
+    height: auto;
+    max-width: 100%;
+    padding-bottom: 0;
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .videoControlsContainer {
+    padding: 0.3rem;
+  }
+
+  .leftArrow,
+  .rightArrow {
+    width: 30px;
+    height: 40px;
+  }
+
+  .arrowIcon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .plyBtn {
+    padding: 1px 3px;
+    font-size: 0.8rem;
+  }
+
+  .durationCount {
+    font-size: 0.75rem;
+    margin: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .videoContainer {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    aspect-ratio: 16 / 9;
+    min-height: 200px;
+    height: auto;
+  }
+
+  .leftArrow,
+  .rightArrow {
+    width: 25px;
+    height: 35px;
+  }
+
+  .arrowIcon {
+    width: 10px;
+    height: 10px;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+}

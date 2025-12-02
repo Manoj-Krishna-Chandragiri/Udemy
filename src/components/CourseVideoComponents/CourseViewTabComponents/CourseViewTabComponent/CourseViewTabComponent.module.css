@@ -38,7 +38,55 @@
 
 .content {
   padding: 1rem;
-
   width: 100%;
   height: 100%;
+}
+
+/* ============================================
+   MOBILE RESPONSIVE - COURSE VIEW TABS
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+  .outerDiv {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .tabs {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .tab {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .content {
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .outerDiv {
+    padding: 0;
+  }
+
+  .tabs {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tab {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+  }
+
+  .content {
+    padding: 0.75rem;
+  }
 }
